@@ -14,27 +14,27 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  await deploy("Greeter", {
+  await deploy("MedicalRecord", {
     from: deployer,
-    args: ["hello world"],
+    //args: ["hello world"],
     log: true,
   });
 
-  await deploy("Storage", {
-    // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
-    from: deployer,
-    //args: [ "Hello", ethers.utils.parseEther("1.5") ],
-    log: true,
-  });
+  // await deploy("Storage", {
+  //   // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
+  //   from: deployer,
+  //   //args: [ "Hello", ethers.utils.parseEther("1.5") ],
+  //   log: true,
+  // });
 
-  await deploy("SupportToken", {
-    // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
-    from: deployer,
-    //args: [ "Hello", ethers.utils.parseEther("1.5") ],
-    log: true,
-  });
+  // await deploy("SupportToken", {
+  //   // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
+  //   from: deployer,
+  //   //args: [ "Hello", ethers.utils.parseEther("1.5") ],
+  //   log: true,
+  // });
 
-  // Getting a previously deployed contract
+  // // Getting a previously deployed contract
   // const Greeter = new ethers.Contract("Greeter", deployer);
 
   // await Greeter.setGreeting("Hello Celo!");
@@ -65,4 +65,4 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   */
 };
 
-module.exports.tags = ["Greeter", "Storage", "SupportToken"];
+module.exports.tags = ["MedicalRecord"];
