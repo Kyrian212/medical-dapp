@@ -1,4 +1,5 @@
-About The Project
+## About The Project
+
 The Medical Dapp smart contract is responsible for overseeing the management of medical records on the blockchain, ensuring both data security and privacy. It enables the secure storage and retrieval of medical records while implementing access restrictions to ensure that only authorized users can access the records.
 
 ## Built With
